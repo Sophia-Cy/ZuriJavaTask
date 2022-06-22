@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS Calculator</title>
+</head>
+<body> 
+    <script>
+        const num1 = eval(prompt('Enter your First number: '));
+        const num2 = eval(prompt('Enter your Second number: '));
+        const operator = prompt('Enter operator(+, -, *, /,)');
+
+        let result;
+        if(isNaN(num1) || isNaN(num2)){
+            alert('Incorrect input, Try again')
+        }else if(operator == '+') {
+                result = num1 + num2;
+            }else if(operator == '-') {
+                result = num1 - num2;
+            }else if(operator == '*') {
+                result = num1 * num2;
+            }
+            else {
+                result = num1 / num2;
+            }
+            alert(num1 + operator + num2+ '=' + result);
+    </script>
+</body>
+</html>
